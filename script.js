@@ -1,5 +1,12 @@
 function convertToFahrenheit() {
     const celsius = document.getElementById('celsius').value;
     const fahrenheit = (celsius * 9/5) + 32;
-    document.getElementById('result').textContent = `${celsius}°C = ${fahrenheit}°F`;
+    document.getElementById('fahrenheit-result').textContent = `${celsius}°C = ${fahrenheit}°F`;
+}
+
+
+function convertToCelsius() {
+    const fahrenheit = document.getElementById('fahrenheit').value;
+    const celsius = (fahrenheit - 32) * 5/9;
+    document.getElementById('celsius-result').textContent = `${fahrenheit}°F = ${celsius}°C`;
 }
